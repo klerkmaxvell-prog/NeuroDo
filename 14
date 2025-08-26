@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Политика конфиденциальности — NeuroDo</title>
+  <meta name="description" content="Политика обработки персональных данных." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+    </div>
+  </header>
+  <main id="content" class="container">
+    <h1>Политика конфиденциальности</h1>
+    <p class="muted">Шаблон: обновите под вашу юрисдикцию.</p>
+    <p>Мы обрабатываем минимальный объём данных для работы сервиса. По запросу удаляем данные пользователя.</p>
+  </main>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+</body>
+</html>
