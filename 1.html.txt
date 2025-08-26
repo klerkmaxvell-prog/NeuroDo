@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NeuroDo — Маркетплейс ИИ‑услуг: чат-боты, интеграции, автоматизация</title>
+  <meta name="description" content="NeuroDo — найдите проверенного ИИ‑исполнителя: чат‑боты, интеграции GPT, OCR/ASR, автоматизация. Разместите задачу — получите 3–7 откликов за сутки. Безопасная сделка, комиссия от 12%." />
+  <link rel="canonical" href="https://example.com/" />
+  <meta property="og:site_name" content="NeuroDo" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NeuroDo — Маркетплейс ИИ‑услуг" />
+  <meta property="og:description" content="Разместите задачу и получите 3–7 откликов за сутки. Эскроу, рейтинги, прозрачная комиссия." />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:locale" content="ru_RU" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+  <!-- Шрифты: по умолчанию системные для скорости. Чтобы включить Inter — раскомментируйте:
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  -->
+  <!-- Аналитика (выключено): включите, удалив комментарии и добавив ID
+  GA4:
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config','G-XXXXXXX');</script>
+  Яндекс.Метрика:
+  <script type="text/javascript">/* ... */</script>
+  -->
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+
+  <!-- JSON-LD: Organization + WebSite/SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "NeuroDo",
+    "url": "https://example.com/",
+    "logo": "https://example.com/assets/favicon.svg",
+    "email": "hello@neurodo.site",
+    "telephone": "+7 (999) 000-00-00",
+    "sameAs": ["https://t.me/"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://example.com/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://example.com/catalog-experts.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">Перейти к контенту</a>
+  <header class="header" role="banner">
+    <div class="container header__inner">
+      <a class="logo" href="index.html" aria-label="NeuroDo">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Zm1 17h-2v-2h2Zm2.07-7.75a3.5 3.5 0 0 1 1.43 2.83h-2a1.5 1.5 0 0 0-.62-1.21l-1.14-.76a2 2 0 0 1-.87-1.65V7h2v1.46a.5.5 0 0 0 .22.41Z"/></svg>
+        <span>NeuroDo</span>
+      </a>
+      <nav class="nav" aria-label="Главная навигация">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu" aria-label="Открыть меню">
+          ☰
+        </button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="how-it-works.html">Как это работает</a></li>
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="escrow-pricing.html">Комиссия</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li class="nav__auth"><a href="auth.html">Войти</a></li>
+          <li><a class="btn btn--primary" href="create-job.html">Создать задачу</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="hero container">
+      <div class="hero__content">
+        <h1>Найдите проверенного ИИ‑исполнителя. Быстро. Безопасно.</h1>
+        <p class="lead">Разместите задачу — получите 3–7 откликов за сутки. Сделки через безопасный эскроу. Комиссия от 12%.</p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="create-job.html">Разместить задачу</a>
+          <a class="btn btn--ghost" href="catalog-experts.html">Стать исполнителем</a>
+        </div>
+        <form class="search" role="search" action="catalog-experts.html" method="get" aria-label="Поиск исполнителей">
+          <label class="sr-only" for="q">Поиск</label>
+          <input id="q" name="q" type="search" placeholder="Например: телеграм‑бот, интеграция GPT, OCR">
+          <button class="btn btn--secondary" type="submit">Найти</button>
+        </form>
+        <p class="muted hero__hint">Популярно: чат‑боты • интеграции CRM • распознавание документов • автоответы</p>
+      </div>
+      <div class="hero__illustration" aria-hidden="true">
+        <div class="spark"></div>
+      </div>
+    </section>
+
+    <section class="container social-proof">
+      <h2>Доверяют бизнесы в СНГ</h2>
+      <ul class="logos" aria-label="Логотипы клиентов">
+        <li>TechRetail</li><li>LogiCo</li><li>FinNow</li><li>EduLab</li><li>MedAI</li>
+      </ul>
+    </section>
+
+    <section class="container categories">
+      <h2>Категории услуг</h2>
+      <div class="grid grid--cards" id="homeCategories">
+        <!-- Заполняется из script.js -->
+      </div>
+      <div class="center">
+        <a class="btn btn--ghost" href="catalog-jobs.html">Смотреть все задачи</a>
+      </div>
+    </section>
+
+    <section class="container how">
+      <h2>Как это работает</h2>
+      <div class="how__grid">
+        <div class="card">
+          <h3>Для заказчика</h3>
+          <ol>
+            <li>Опишите задачу и бюджет</li>
+            <li>Получите отклики и выберите исполнителя</li>
+            <li>Оплатите в эскроу — деньги переводятся после приёмки</li>
+          </ol>
+          <a class="btn btn--secondary" href="create-job.html">Создать задачу</a>
+        </div>
+        <div class="card">
+          <h3>Для исполнителя</h3>
+          <ol>
+            <li>Заполните профиль и пройдите верификацию</li>
+            <li>Откликайтесь на подходящие задачи</li>
+            <li>Получайте оплату без задержек и скрытых комиссий</li>
+          </ol>
+          <a class="btn btn--ghost" href="catalog-experts.html">Стать исполнителем</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container benefits">
+      <h2>Почему NeuroDo</h2>
+      <ul class="benefits__list">
+        <li>Верифицированные исполнители</li>
+        <li>Эскроу и защита сделки</li>
+        <li>Прозрачная комиссия</li>
+        <li>Быстрые отклики</li>
+        <li>Поддержка на каждом шаге</li>
+      </ul>
+    </section>
+
+    <section class="container cases">
+      <h2>Кейсы</h2>
+      <div class="grid grid--cards">
+        <article class="card">
+          <h3>Ритейл: Telegram‑бот поддержки</h3>
+          <p>−35% нагрузки на колл‑центр, +18% конверсии за 4 недели.</p>
+        </article>
+        <article class="card">
+          <h3>Логистика: OCR накладных</h3>
+          <p>−60% ручного ввода, точность 99.2% за 6 недель.</p>
+        </article>
+        <article class="card">
+          <h3>E‑commerce: рекомендации</h3>
+          <p>+12% к среднему чеку, внедрение за 8 недель.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container escrow">
+      <h2>Безопасная сделка</h2>
+      <div class="escrow__grid">
+        <div class="card">
+          <h3>Как работает эскроу</h3>
+          <p>Оплата резервируется на платформе и переводится исполнителю после приёмки результата.</p>
+          <ul>
+            <li>Резерв без комиссии</li>
+            <li>Комиссия платформы — 12% (мин. 200 ₽)</li>
+            <li>Вывод средств — 2%</li>
+          </ul>
+          <a class="btn btn--ghost" href="escrow-pricing.html">Подробнее о комиссии</a>
+        </div>
+        <div class="card">
+          <h3>Калькулятор комиссии</h3>
+          <form id="calcForm" class="calc" onsubmit="return false">
+            <label>Сумма сделки, ₽
+              <input type="number" id="calcAmount" placeholder="Например, 50000" min="0" inputmode="decimal">
+            </label>
+            <div class="calc__result" id="calcResult" aria-live="polite">Комиссия: —</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="container testimonials">
+      <h2>Отзывы</h2>
+      <div class="grid grid--cards">
+        <blockquote class="card">«Нашли специалиста за день, внедрили бота за 3 недели.» — Анна, Retail</blockquote>
+        <blockquote class="card">«OCR снизил ручной труд на 60%. Всё чётко по срокам.» — Игорь, Логистика</blockquote>
+        <blockquote class="card">«Рекомендации подняли AOV на 12%. Рекомендую платформу.» — Мария, E‑com</blockquote>
+      </div>
+    </section>
+
+    <section class="container faq-preview">
+      <h2>FAQ</h2>
+      <details class="accordion"><summary>Как выбрать исполнителя?</summary><div>Смотрите рейтинг, портфолио, релевантные кейсы и условия.</div></details>
+      <details class="accordion"><summary>Как работает безопасная сделка?</summary><div>Деньги резервируются и переводятся после приёмки.</div></details>
+      <details class="accordion"><summary>Какая комиссия?</summary><div>12% от суммы (минимум 200 ₽), вывод — 2%.</div></details>
+      <p><a href="faq.html">Читать все вопросы →</a></p>
+    </section>
+
+    <section class="container cta">
+      <div class="cta__box">
+        <h2>Готовы начать?</h2>
+        <p>Опишите задачу — получите 3–7 откликов за сутки.</p>
+        <a class="btn btn--primary" href="create-job.html">Создать задачу</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__grid">
+      <div>
+        <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+        <p class="muted">hello@neurodo.site • +7 (999) 000‑00‑00</p>
+      </div>
+      <nav aria-label="Футер">
+        <ul class="footer__links">
+          <li><a href="how-it-works.html">Как это работает</a></li>
+          <li><a href="escrow-pricing.html">Комиссия</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="blog.html">Блог</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="policy.html">Политика</a></li>
+          <li><a href="terms.html">Условия</a></li>
+        </ul>
+      </nav>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/catalog-experts.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Исполнители ИИ‑услуг — NeuroDo</title>
+  <meta name="description" content="Каталог исполнителей ИИ‑услуг: чат‑боты, GPT‑интеграции, OCR/ASR, ML‑модели, автоматизация. Фильтры по навыкам, рейтингу и цене." />
+  <meta property="og:title" content="Исполнители ИИ‑услуг — NeuroDo" />
+  <meta property="og:description" content="Найдите проверенного исполнителя под вашу задачу. Отклики за сутки." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Главная","item":"https://example.com/"},
+    {"@type":"ListItem","position":2,"name":"Исполнители","item":"https://example.com/catalog-experts.html"}]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="how-it-works.html">Как это работает</a></li>
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a class="active" aria-current="page" href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="escrow-pricing.html">Комиссия</a></li>
+          <li><a href="auth.html">Войти</a></li>
+          <li><a class="btn btn--primary" href="create-job.html">Создать задачу</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <ol>
+        <li><a href="index.html">Главная</a></li>
+        <li aria-current="page">Исполнители</li>
+      </ol>
+    </nav>
+    <h1>Исполнители</h1>
+
+    <form id="expertsFilters" class="filters" onsubmit="return false">
+      <input type="search" id="expertSearch" placeholder="Навык или ключевое слово (например, Telegram бот)">
+      <select id="expertCategory">
+        <option value="">Все категории</option>
+      </select>
+      <select id="expertRating">
+        <option value="">Любой рейтинг</option>
+        <option value="4">4★ и выше</option>
+        <option value="4.5">4.5★ и выше</option>
+      </select>
+      <select id="expertLocation">
+        <option value="">Любой формат</option>
+        <option value="online">Онлайн</option>
+        <option value="moscow">Москва</option>
+        <option value="spb">Санкт‑Петербург</option>
+      </select>
+    </form>
+
+    <div id="expertsList" class="grid grid--cards list">
+      <!-- Рендерится из script.js -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links">
+        <li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li>
+      </ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/catalog-jobs.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Задачи по ИИ — NeuroDo</title>
+  <meta name="description" content="Каталог задач по ИИ: чат‑боты, интеграции, компьютерное зрение, распознавание речи, ML‑модели. Фильтры по бюджету, категории и срочности." />
+  <meta property="og:title" content="Задачи по ИИ — NeuroDo" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Главная","item":"https://example.com/"},
+    {"@type":"ListItem","position":2,"name":"Задачи","item":"https://example.com/catalog-jobs.html"}]}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="how-it-works.html">Как это работает</a></li>
+          <li><a class="active" aria-current="page" href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="escrow-pricing.html">Комиссия</a></li>
+          <li><a href="auth.html">Войти</a></li>
+          <li><a class="btn btn--primary" href="create-job.html">Создать задачу</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <ol><li><a href="index.html">Главная</a></li><li aria-current="page">Задачи</li></ol>
+    </nav>
+    <h1>Задачи</h1>
+    <form id="jobsFilters" class="filters" onsubmit="return false">
+      <input type="search" id="jobSearch" placeholder="Поиск по задачам">
+      <select id="jobCategory"><option value="">Все категории</option></select>
+      <select id="jobUrgency">
+        <option value="">Любая срочность</option>
+        <option value="low">Низкая</option>
+        <option value="medium">Средняя</option>
+        <option value="high">Высокая</option>
+      </select>
+      <input type="number" id="budgetMin" placeholder="Бюджет от, ₽" min="0">
+      <input type="number" id="budgetMax" placeholder="Бюджет до, ₽" min="0">
+    </form>
+    <div id="jobsList" class="list">
+      <!-- Рендерится из script.js -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/job.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Задача — NeuroDo</title>
+  <meta name="description" content="Детальная страница задачи: требования, бюджет, сроки, отклики и чат." />
+  <meta property="og:title" content="Задача — NeuroDo" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="escrow-pricing.html">Комиссия</a></li>
+          <li><a href="auth.html">Войти</a></li>
+          <li><a class="btn btn--primary" href="create-job.html">Создать задачу</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <ol>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog-jobs.html">Задачи</a></li>
+        <li aria-current="page">Задача</li>
+      </ol>
+    </nav>
+
+    <div class="layout">
+      <article class="job card" id="jobDetail">
+        <!-- Рендерится из script.js -->
+      </article>
+
+      <aside class="sidebar">
+        <div class="card">
+          <h3>Откликнуться</h3>
+          <form id="replyForm">
+            <label>Цена, ₽
+              <input type="number" name="price" min="0" required>
+            </label>
+            <label>Срок, дней
+              <input type="number" name="days" min="1" required>
+            </label>
+            <label>Сообщение
+              <textarea name="message" rows="4" placeholder="Коротко опишите подход"></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Отправить отклик</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Чат (демо)</h3>
+          <div id="chat" class="chat" aria-live="polite"></div>
+          <form id="chatForm" class="chat__form">
+            <label class="sr-only" for="chatInput">Сообщение</label>
+            <input id="chatInput" type="text" placeholder="Напишите сообщение…" autocomplete="off">
+            <button class="btn btn--secondary" type="submit">Отправить</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/expert.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Профиль исполнителя — NeuroDo</title>
+  <meta name="description" content="Профиль исполнителя: навыки, портфолио, рейтинг и отзывы." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="escrow-pricing.html">Комиссия</a></li>
+          <li><a href="auth.html">Войти</a></li>
+          <li><a class="btn btn--primary" href="create-job.html">Создать задачу</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <ol><li><a href="index.html">Главная</a></li><li><a href="catalog-experts.html">Исполнители</a></li><li aria-current="page">Профиль</li></ol>
+    </nav>
+
+    <article id="expertProfile" class="card">
+      <!-- Рендерится из script.js -->
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/create-job.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Создать задачу — NeuroDo</title>
+  <meta name="description" content="Опишите задачу по ИИ, укажите бюджет и сроки. Получите 3–7 откликов за сутки." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="auth.html">Войти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <h1>Создать задачу</h1>
+    <form id="createJobForm" class="form">
+      <div class="form__grid">
+        <label>Заголовок задачи
+          <input type="text" name="title" placeholder="Напр.: Телеграм‑бот для поддержки" required>
+        </label>
+        <label>Категория
+          <select name="category" id="createCategory" required></select>
+        </label>
+        <label>Бюджет, ₽
+          <input type="number" name="budget" min="0" placeholder="Напр., 50000" required>
+        </label>
+        <label>Срок (дней)
+          <input type="number" name="days" min="1" placeholder="Напр., 14" required>
+        </label>
+        <label>Формат
+          <select name="location">
+            <option value="online">Онлайн</option>
+            <option value="moscow">Москва</option>
+            <option value="spb">Санкт‑Петербург</option>
+          </select>
+        </label>
+        <label>Срочность
+          <select name="urgency">
+            <option value="low">Низкая</option>
+            <option value="medium" selected>Средняя</option>
+            <option value="high">Высокая</option>
+          </select>
+        </label>
+        <label class="form__full">Описание задачи
+          <textarea name="description" rows="6" placeholder="Опишите контекст, ожидаемый результат и ограничения" required></textarea>
+        </label>
+        <label>Вложения (демо)
+          <input type="file" name="attachments" multiple aria-describedby="attachHint">
+          <span id="attachHint" class="muted small">Файлы не загружаются — демо без бэкенда</span>
+        </label>
+      </div>
+      <div class="form__actions">
+        <button class="btn btn--primary" type="submit">Опубликовать</button>
+        <a class="btn btn--ghost" href="catalog-jobs.html">Отмена</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/how-it-works.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Как это работает — NeuroDo</title>
+  <meta name="description" content="Разместите задачу — получите 3–7 откликов за сутки. Сделки проходят через безопасный эскроу." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a class="active" aria-current="page" href="how-it-works.html">Как это работает</a></li>
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="escrow-pricing.html">Комиссия</a></li>
+          <li><a href="auth.html">Войти</a></li>
+          <li><a class="btn btn--primary" href="create-job.html">Создать задачу</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="content" class="container">
+    <h1>Как это работает</h1>
+    <div class="grid grid--cards">
+      <div class="card">
+        <h2>Для заказчиков</h2>
+        <ol>
+          <li>Создайте задачу: контекст, результат, бюджет и сроки</li>
+          <li>Получите отклики, сравните профили и цены</li>
+          <li>Оплатите в эскроу, контролируйте этапы, примите результат</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2>Для исполнителей</h2>
+        <ol>
+          <li>Заполните профиль, укажите навыки и ставки</li>
+          <li>Откликайтесь на задачи, проходите интервью</li>
+          <li>Сдайте работу, получите оплату без задержек</li>
+        </ol>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Правила безопасной сделки</h2>
+      <ul>
+        <li>Все оплаты проходят через платформу</li>
+        <li>Комиссия — 12% (мин. 200 ₽), вывод — 2%</li>
+        <li>Спорные ситуации решаются арбитражом платформы</li>
+      </ul>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/escrow-pricing.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Комиссия и эскроу — NeuroDo</title>
+  <meta name="description" content="Комиссия платформы: 12% с успешной сделки (мин. 200 ₽). Резерв без комиссии. Вывод средств — 2%." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Service","name":"Безопасная сделка (эскроу)","provider":{"@type":"Organization","name":"NeuroDo"},"areaServed":"RU"}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="how-it-works.html">Как это работает</a></li>
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a class="active" aria-current="page" href="escrow-pricing.html">Комиссия</a></li>
+          <li><a href="auth.html">Войти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <h1>Комиссия и эскроу</h1>
+    <div class="grid grid--cards">
+      <div class="card">
+        <h2>Тарифы</h2>
+        <ul>
+          <li>Комиссия платформы — <b>12%</b> (минимум 200 ₽)</li>
+          <li>Резервирование средств — 0%</li>
+          <li>Вывод средств — 2%</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Калькулятор</h2>
+        <form id="feesCalc" onsubmit="return false" class="calc">
+          <label>Сумма сделки, ₽
+            <input id="feesAmount" type="number" min="0" placeholder="Напр., 80000">
+          </label>
+          <div id="feesResult" class="calc__result" aria-live="polite">Комиссия: —</div>
+        </form>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Как подключить оплату</h2>
+      <p class="muted small">Интеграция платежей отключена (демо). Поддерживаются YooKassa/Stripe.</p>
+      <pre class="code small"><code>
+// Пример точки интеграции (псевдо-код)
+// POST /api/escrow/create-intent { jobId, amount, currency: 'RUB' }
+// YooKassa/Stripe SDK → clientSecret → фронт запускает оплату
+// После подтверждения: webhook /api/escrow/webhook → mark as reserved
+      </code></pre>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/faq.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — NeuroDo</title>
+  <meta name="description" content="Частые вопросы о NeuroDo: как выбрать исполнителя, как работает эскроу, какая комиссия." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Как выбрать исполнителя?","acceptedAnswer":{"@type":"Answer","text":"Смотрите рейтинг, портфолио, релевантные кейсы и условия."}},
+      {"@type":"Question","name":"Как работает безопасная сделка?","acceptedAnswer":{"@type":"Answer","text":"Оплата резервируется и переводится исполнителю после приёмки."}},
+      {"@type":"Question","name":"Какая комиссия?","acceptedAnswer":{"@type":"Answer","text":"12% с успешной сделки (минимум 200 ₽), вывод средств — 2%."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="how-it-works.html">Как это работает</a></li>
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="escrow-pricing.html">Комиссия</a></li>
+          <li><a class="active" aria-current="page" href="faq.html">FAQ</a></li>
+          <li><a href="auth.html">Войти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <h1>Частые вопросы</h1>
+    <details class="accordion" open><summary>Как выбрать исполнителя?</summary><div>Смотрите рейтинг, портфолио, релевантные кейсы и условия.</div></details>
+    <details class="accordion"><summary>Как работает безопасная сделка?</summary><div>Оплата резервируется и переводится исполнителю после приёмки.</div></details>
+    <details class="accordion"><summary>Какая комиссия?</summary><div>12% с успешной сделки (минимум 200 ₽), вывод — 2%.</div></details>
+    <details class="accordion"><summary>Можно ли работать без эскроу?</summary><div>Мы рекомендуем эскроу для защиты обеих сторон.</div></details>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/blog.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Блог — NeuroDo</title>
+  <meta name="description" content="Гайды и кейсы по ИИ‑внедрениям для бизнеса." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="how-it-works.html">Как это работает</a></li>
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="escrow-pricing.html">Комиссия</a></li>
+          <li><a class="active" aria-current="page" href="blog.html">Блог</a></li>
+          <li><a href="auth.html">Войти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <h1>Блог</h1>
+    <div id="blogList" class="grid grid--cards">
+      <!-- Рендерится демо-постами из script.js -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/auth.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Войти / Регистрация — NeuroDo</title>
+  <meta name="description" content="Авторизация для заказчиков и исполнителей." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a class="btn btn--primary" href="create-job.html">Создать задачу</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <h1>Войти / Регистрация</h1>
+    <div class="tabs" role="tablist" aria-label="Формы">
+      <button class="tab is-active" role="tab" aria-selected="true" data-tab="login">Войти</button>
+      <button class="tab" role="tab" aria-selected="false" data-tab="register">Регистрация</button>
+    </div>
+    <section id="login" class="tab__panel is-active" role="tabpanel">
+      <form id="loginForm" class="form form--narrow">
+        <label>Email<input type="email" name="email" required></label>
+        <label>Пароль<input type="password" name="password" minlength="6" required></label>
+        <button class="btn btn--primary" type="submit">Войти</button>
+      </form>
+    </section>
+    <section id="register" class="tab__panel" role="tabpanel" hidden>
+      <form id="registerForm" class="form form--narrow">
+        <label>Имя<input type="text" name="name" required></label>
+        <label>Email<input type="email" name="email" required></label>
+        <label>Пароль<input type="password" name="password" minlength="6" required></label>
+        <label>Роль
+          <select name="role"><option value="client">Заказчик</option><option value="expert">Исполнитель</option></select>
+        </label>
+        <button class="btn btn--secondary" type="submit">Зарегистрироваться</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/dashboard.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Дашборд — NeuroDo</title>
+  <meta name="description" content="Ваши задачи и отклики (демо, локально)." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a class="btn btn--primary" href="create-job.html">Создать задачу</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <h1>Дашборд</h1>
+    <div class="grid grid--two">
+      <section class="card">
+        <h2>Мои задачи</h2>
+        <div id="myJobs"></div>
+      </section>
+      <section class="card">
+        <h2>Мои отклики</h2>
+        <div id="myProposals"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/policy.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Политика конфиденциальности — NeuroDo</title>
+  <meta name="description" content="Политика обработки персональных данных." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+    </div>
+  </header>
+  <main id="content" class="container">
+    <h1>Политика конфиденциальности</h1>
+    <p class="muted">Шаблон: обновите под вашу юрисдикцию.</p>
+    <p>Мы обрабатываем минимальный объём данных для работы сервиса. По запросу удаляем данные пользователя.</p>
+  </main>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+</body>
+</html>
+— — — — — — — — — — — — — — — — — — — —
+/terms.html
+
+HTML
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Пользовательское соглашение — NeuroDo</title>
+  <meta name="description" content="Условия использования платформы." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+    </div>
+  </header>
+  <main id="content" class="container">
+    <h1>Пользовательское соглашение</h1>
+    <p class="muted">Шаблон: согласуйте с юристом.</p>
+    <ul>
+      <li>Все сделки проходят через платформу (эскроу)</li>
+      <li>Комиссия — 12% (мин. 200 ₽), вывод — 2%</li>
+      <li>Запрещён спам и обход платформы</li>
+    </ul>
+  </main>
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+</body>
+</html>
