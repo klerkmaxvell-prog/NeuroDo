@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FAQ — NeuroDo</title>
+  <meta name="description" content="Частые вопросы о NeuroDo: как выбрать исполнителя, как работает эскроу, какая комиссия." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Как выбрать исполнителя?","acceptedAnswer":{"@type":"Answer","text":"Смотрите рейтинг, портфолио, релевантные кейсы и условия."}},
+      {"@type":"Question","name":"Как работает безопасная сделка?","acceptedAnswer":{"@type":"Answer","text":"Оплата резервируется и переводится исполнителю после приёмки."}},
+      {"@type":"Question","name":"Какая комиссия?","acceptedAnswer":{"@type":"Answer","text":"12% с успешной сделки (минимум 200 ₽), вывод средств — 2%."}}
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="how-it-works.html">Как это работает</a></li>
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="escrow-pricing.html">Комиссия</a></li>
+          <li><a class="active" aria-current="page" href="faq.html">FAQ</a></li>
+          <li><a href="auth.html">Войти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <h1>Частые вопросы</h1>
+    <details class="accordion" open><summary>Как выбрать исполнителя?</summary><div>Смотрите рейтинг, портфолио, релевантные кейсы и условия.</div></details>
+    <details class="accordion"><summary>Как работает безопасная сделка?</summary><div>Оплата резервируется и переводится исполнителю после приёмки.</div></details>
+    <details class="accordion"><summary>Какая комиссия?</summary><div>12% с успешной сделки (минимум 200 ₽), вывод — 2%.</div></details>
+    <details class="accordion"><summary>Можно ли работать без эскроу?</summary><div>Мы рекомендуем эскроу для защиты обеих сторон.</div></details>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
