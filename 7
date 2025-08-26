@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Создать задачу — NeuroDo</title>
+  <meta name="description" content="Опишите задачу по ИИ, укажите бюджет и сроки. Получите 3–7 откликов за сутки." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="auth.html">Войти</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <h1>Создать задачу</h1>
+    <form id="createJobForm" class="form">
+      <div class="form__grid">
+        <label>Заголовок задачи
+          <input type="text" name="title" placeholder="Напр.: Телеграм‑бот для поддержки" required>
+        </label>
+        <label>Категория
+          <select name="category" id="createCategory" required></select>
+        </label>
+        <label>Бюджет, ₽
+          <input type="number" name="budget" min="0" placeholder="Напр., 50000" required>
+        </label>
+        <label>Срок (дней)
+          <input type="number" name="days" min="1" placeholder="Напр., 14" required>
+        </label>
+        <label>Формат
+          <select name="location">
+            <option value="online">Онлайн</option>
+            <option value="moscow">Москва</option>
+            <option value="spb">Санкт‑Петербург</option>
+          </select>
+        </label>
+        <label>Срочность
+          <select name="urgency">
+            <option value="low">Низкая</option>
+            <option value="medium" selected>Средняя</option>
+            <option value="high">Высокая</option>
+          </select>
+        </label>
+        <label class="form__full">Описание задачи
+          <textarea name="description" rows="6" placeholder="Опишите контекст, ожидаемый результат и ограничения" required></textarea>
+        </label>
+        <label>Вложения (демо)
+          <input type="file" name="attachments" multiple aria-describedby="attachHint">
+          <span id="attachHint" class="muted small">Файлы не загружаются — демо без бэкенда</span>
+        </label>
+      </div>
+      <div class="form__actions">
+        <button class="btn btn--primary" type="submit">Опубликовать</button>
+        <a class="btn btn--ghost" href="catalog-jobs.html">Отмена</a>
+      </div>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
