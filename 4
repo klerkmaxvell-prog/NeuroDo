@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Задача — NeuroDo</title>
+  <meta name="description" content="Детальная страница задачи: требования, бюджет, сроки, отклики и чат." />
+  <meta property="og:title" content="Задача — NeuroDo" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">К контенту</a>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <nav class="nav">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav__list">
+          <li><a href="catalog-jobs.html">Задачи</a></li>
+          <li><a href="catalog-experts.html">Исполнители</a></li>
+          <li><a href="escrow-pricing.html">Комиссия</a></li>
+          <li><a href="auth.html">Войти</a></li>
+          <li><a class="btn btn--primary" href="create-job.html">Создать задачу</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <nav class="breadcrumbs" aria-label="Хлебные крошки">
+      <ol>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog-jobs.html">Задачи</a></li>
+        <li aria-current="page">Задача</li>
+      </ol>
+    </nav>
+
+    <div class="layout">
+      <article class="job card" id="jobDetail">
+        <!-- Рендерится из script.js -->
+      </article>
+
+      <aside class="sidebar">
+        <div class="card">
+          <h3>Откликнуться</h3>
+          <form id="replyForm">
+            <label>Цена, ₽
+              <input type="number" name="price" min="0" required>
+            </label>
+            <label>Срок, дней
+              <input type="number" name="days" min="1" required>
+            </label>
+            <label>Сообщение
+              <textarea name="message" rows="4" placeholder="Коротко опишите подход"></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Отправить отклик</button>
+          </form>
+        </div>
+        <div class="card">
+          <h3>Чат (демо)</h3>
+          <div id="chat" class="chat" aria-live="polite"></div>
+          <form id="chatForm" class="chat__form">
+            <label class="sr-only" for="chatInput">Сообщение</label>
+            <input id="chatInput" type="text" placeholder="Напишите сообщение…" autocomplete="off">
+            <button class="btn btn--secondary" type="submit">Отправить</button>
+          </form>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <a class="logo" href="index.html"><svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2Z"/></svg><span>NeuroDo</span></a>
+      <ul class="footer__links"><li><a href="policy.html">Политика</a></li><li><a href="terms.html">Условия</a></li></ul>
+      <p class="muted small">© 2025 NeuroDo</p>
+    </div>
+  </footer>
+  <div id="toast"></div>
+</body>
+</html>
